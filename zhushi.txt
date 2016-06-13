@@ -1,0 +1,48 @@
+文件名大小写问题！
+方法必须写访问修饰限定符！
+类文件以 class。php 结尾
+方法名大小写一致
+自动加载优化！适用于所有文件
+目录的命名语意化
+sql的重复代码优化
+函数之间的参数必须加空格function($a, $b, $c)
+变量名首单词的首字母必须小写 ！！ 第二个单词首字母大写
+条件语句大括号必须同行写
+namespace
+创建名字空间 受保护的application 路由分发类
+创建index并引入由public 函数 其中调用受保护的方法Application
+创建受保护的静态URL解析函数 取得用户传的值 p平台 a方法 c控制器
+继续在方法中定义常量 p a c
+在分发路由中设置？？
+在public 分发路由之前调用解析方法
+定义方法并定义目录常量 如下｛
+define('DS',DIRCTROY_SEPAOR)路径分隔符
+define('ROOT_PATH',dirname(__DIR__))定义根目录
+define('APP_PATH',ROOT_PATH.DS.'app')应用目录
+define(VIEW_PATH,APP_PATH.DS.'view')视图目录
+define('CONFIG_PATH',APP_PATH.DS.'config')配置文件
+｝；并在public 中调用该方法
+定义受保护的初始字符集方法 并在public中第一个调用
+定义受保护的静态报错级别方法  error_reporting
+{
+  修改php的配置只在当前的请求有效
+  ini_set('display_errors','On');
+  errors_reporting()
+}
+在public中调用报错方法
+新建名字空间文件 自动加载
+更改路由分发
+new控制器 时加名字空间！！
+定义受保护的静态注册自动加载方法
+spl 自动加载函数
+其中 需要对classname（中有名字空间路径与需要包含文件路径 部分相同）加路径 和进行／的转换
+注意“ ds 在不同系统会转换成对应的分隔符”
+
+application
+initialCharset
+defineDirConst
+parseUrlParams
+registerAutoload
+dispatchRoute
+dirname()
+PLATFORM
